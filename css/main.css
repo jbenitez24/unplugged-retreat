@@ -103,6 +103,14 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
+  padding: 0;
+}
+header nav ul li {
+  padding: 0 30px;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
 }
 header .content-wrapper {
   display: flex;
@@ -110,13 +118,24 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
 }
+footer p {
+  margin: 0;
+}
+.features p {
+  margin: 0;
+}
 /*---------------- Mobile Homepage -----------------*/
 /*-----aside-----*/
-aside {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.form .content-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
 }
 /*-----features-----*/
 .features {
@@ -137,11 +156,17 @@ aside {
   flex-flow: row wrap;
 }
 /*-----Reviews-----*/
-.reviews .content-wrapper {
+.reviews{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+.reviews .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
 /*------------- Mobile About Page -------------------*/
 .mission {
   display: flex;
@@ -156,19 +181,53 @@ aside {
   flex-flow: row wrap;
 }
 /*--------------- Mobile FAQ Page --------------------*/
-.faq {
+.questions {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-.faq .content-wrapper{
+.questions .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
+/*----------------Mobile Hompage --------------*/
+header {
+  margin: 0 auto;
+}
+header nav{
+  width: 60%;
+}
+header h1 {
+  width: 70%;
+}
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+  text-align: center;
+}
+.form  p {
+width: 90%;
+}
+.content-wrapper {
+  width: 90%;
+}
+.feature-items {
+  width: 60%;
+}
+.form input {
+width: 90%;
+}
+/*----------------Mobile About Page--------------*/
+.mission .content-wrapper {
+  width: 90%;
+}
+/*----------------Mobile FAQ Page---------------*/
+.question-content {
+  width: 90%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
