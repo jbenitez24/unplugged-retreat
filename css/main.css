@@ -166,6 +166,12 @@ footer p {
   margin: 0;
 }
 /*---------------- Mobile Homepage -----------------*/
+/*-----Hero-----*/
+.hero  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*-----aside-----*/
 .form {
   display: flex;
@@ -243,23 +249,75 @@ footer p {
 /*----------------Mobile Hompage --------------*/
 header {
   margin: 0 auto;
+  background-color: #202322;
 }
 header nav{
   width: 60%;
 }
-header h1 {
-  width: 70%;
+footer {
+  background-color: #202322;
 }
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
   text-align: center;
 }
+.hero{
+  background-image: url('../assets/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  
+}
+.hero h1 {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 2.25em;
+  font-weight: normal;
+  margin: 0;
+  
+}
+.form {
+  /* margin-top: 30px; */
+  background-color: #527158;
+}
 .form  p {
 width: 90%;
 }
+.form-content {
+  width: 100%;
+}
+.form input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+.form input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 .content-wrapper {
   width: 90%;
+}
+.features {
+  background-image: url('../assets/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  padding-bottom: 30px;
+}
+.feature-title h2{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  width: 91%;
 }
 .feature-items {
   width: 60%;
@@ -267,13 +325,78 @@ width: 90%;
 .form input {
   width: 90%;
 }
+.features .icons {
+  padding: 30px 0;
+}
+.features-item-description {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.reviews {
+  background-color: #2a423a;
+}
+
 /*----------------Mobile About Page--------------*/
+.mission{
+  background-color: #527158;
+}
 .mission .content-wrapper {
   width: 90%;
+  padding-bottom: 30px;
+}
+.mission-content h2 {
+  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+.mission-content p {
+  font-size: .875em;
+  line-height: 18px;
+}
+.contact {
+  background-color: #2a423a;
+}
+.contact .content-wrapper {
+  padding: 30px 0;
+}
+.contact-title h2 {
+  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+.contact-info h3 {
+  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+}
+.contact-info p {
+  font-size: .875em;
 }
 /*----------------Mobile FAQ Page---------------*/
-.question-content {
+.questions {
+  background-color: #527158;
+}
+.questions .content-wrapper {
   width: 90%;
+}
+.question-title  h2{
+  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 36px;
+}
+.question-content{
+  padding-bottom: 30px;
+}
+.question-content h3 {
+  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 24px;
+}
+.question-content p {
+font-size: .875em;
+line-height: 18px;
 }
 /*------------Tablet Styles--------------*/
 @media only screen and (min-width: 768px) {
