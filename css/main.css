@@ -114,19 +114,20 @@ textarea {
     font-size: .875em;
     line-height: 18px;
    }
-   img {
-
+   figure img {
+    width: 100%;
    }
-   
-  address {
-   line-height: auto;
-   font-size: .875em;
-   font-style: normal;
-  }
-   
-  .content-wrapper {
+   figure {
+     margin: 0;
+   }
+   address {
+    line-height: auto;
+    font-size: .875em;
+    font-style: normal;
+   }
 
-  }
+   
+
 /*----------------Base Header - Footer Styles --------------------------*/ 
 header,
 footer {
@@ -206,7 +207,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column;
 }
 /*-----Reviews-----*/
 .reviews{
@@ -217,7 +218,7 @@ footer p {
 .reviews .content-wrapper {
   display: flex;
   justify-content: flex-start;
-  flex-flow: row wrap;
+  flex-flow: column;
 }
 
 /*------------- Mobile About Page -------------------*/
@@ -263,9 +264,12 @@ footer .content-wrapper {
   text-align: center;
 }
 .hero{
-  background-image: url('../assets/jake-melara-30679-unsplash.jpg');
+  background: url('../assets/jake-melara-30679-unsplash.jpg') center;
   background-size: cover;
-  
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 .hero h1 {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -274,12 +278,18 @@ footer .content-wrapper {
   margin: 0;
   
 }
+.hero .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  flex-flow: row wrap;
+}
 .form {
   /* margin-top: 30px; */
   background-color: #527158;
 }
 .form  p {
-width: 90%;
+  width: 90%;
 }
 .form-content {
   width: 100%;
@@ -334,8 +344,32 @@ width: 90%;
 }
 .reviews {
   background-color: #2a423a;
+  padding: 30px 0;
 }
-
+.review-title h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0;
+}
+.review-content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 20px;
+}
+.review-content p {
+  font-size: .875em;
+  line-height: 18px;
+  margin: 0;
+  padding-top: 20px;
+}
+.review-content img {
+  width: 100%;
+  margin-top: 20px;
+}
 /*----------------Mobile About Page--------------*/
 .mission{
   background-color: #527158;
@@ -345,7 +379,7 @@ width: 90%;
   padding-bottom: 30px;
 }
 .mission-content h2 {
-  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 1.875rem;
   font-weight: 400;
 }
@@ -360,12 +394,12 @@ width: 90%;
   padding: 30px 0;
 }
 .contact-title h2 {
-  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 1.875rem;
   font-weight: 400;
 }
 .contact-info h3 {
-  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.125em;
 }
@@ -380,7 +414,7 @@ width: 90%;
   width: 90%;
 }
 .question-title  h2{
-  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.875rem;
   line-height: 36px;
@@ -389,7 +423,7 @@ width: 90%;
   padding-bottom: 30px;
 }
 .question-content h3 {
-  font-family: 'Poppin', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1.125em;
   line-height: 24px;
@@ -408,7 +442,7 @@ line-height: 18px;
   footer .content-wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
   }
   .footer-content {
     width: 50%;
@@ -422,13 +456,55 @@ line-height: 18px;
     align-items: center;
     flex-flow: column;
     width: 90%;
+    padding: 30px 0;
+  }
+  .footer-content h3 {
+    font-size: 1.875em;
+    font-weight: normal;
+  }
+  .footer-content p {
+    font-size: .875em;  
+  }
+  .social h3 {
+    font-size: 1.5em;
+    font-weight: normal;    
   }
   /*Homepage*/
+  /*Hero*/
+  .hero-content{
+    width: 90%;
+    padding-top: 70px;
+  }
+  .hero-content h1 {
+    font-size: 3em;
+    font-weight: normal;
+    line-height: 48px;
+  }
+  /*Form*/
   .form .content-wrapper {
+    display: flex;
     justify-content: space-evenly;
-  }  
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding-top: 30px;
+  }
   .form-content {
-    width: 30%;
+    width: 50%;
+  }
+  .form-content h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+  }
+  .form-content p {
+    font-size: .875em;
+    line-height: 18px;
+    width: 70%;
+  }
+  /*Features*/
+  .features .content-wrapper {
+    justify-content: space-evenly;
   }
   .feature-wrapper{
     display: flex;
@@ -439,15 +515,43 @@ line-height: 18px;
   .feature-items {
     width: 35%;
   }
-
-  .features .content-wrapper {
-    justify-content: space-evenly;
+  .feature-title h2 {
+    font-size: 2.25em;
   }
-  .reviews .content-wrapper {
-    justify-content: space-around;
+  .feature-items {
+    width: 39%;
+  }
+  .features-item-description {
+    font-size: .875rem;
+    line-height: 18px;
+    width: 74%;
+  }
+/*Reviews*/
+  .review-title {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 100%;
+  }
+  .review-title h2 {
+    font-size: 2.25em;
+    font-weight: 400;
+  }
+  .reviews .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 50px 0;
   }
   .review-content {
-    width: 50%;
+    width: 48%;
+  }
+  .review-content h3 {
+    font-size: 1.5rem;
+  }
+  .review-content p {
+    font-size: .875em;
+    line-height: 18px;
   }
   /*About*/
   .mission .content-wrapper .mission-content {
@@ -490,17 +594,49 @@ line-height: 18px;
 /*------------Desktop Styles--------------*/
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
+/*Hero*/
+  .hero {
+    min-height: 600px;
+  }
+  .hero-content{
+    width: 90%;
+    padding-top: 30px;
+  }
+  .hero-content h1 {
+    font-size: 3.75em;
+    font-weight: normal;
+    width: 70%;
+  }
+  .hero h1 {
+  }
+/*Form*/
   .form .content-wrapper {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-flow: row wrap;
+    padding-top: 30px;
   }
   .form-content {
-    width: 25%;
+    width: 36%;
   }
+  .form-content h3 {
+    font-size: 1.875em;
+    font-weight: normal;
+    margin: 0;
+  }
+  .form-content p {
+    font-size: 1.125em;
+    line-height: 24px;
+    width: 70%;
+  }
+/*Feature*/
   .feature-title {
     width: 90%;
+  }
+  
+  .feature-title h2 {
+    font-size: 2.25em;
   }
   .feature-items {
     width: 27%;
@@ -510,6 +646,52 @@ line-height: 18px;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
+  }
+  .features-item-description {
+    font-size: 1.125rem;
+    line-height: 24px;
+    width: 74%;
+  }
+
+  .review-title {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 100%;
+  }
+  .review-title h2 {
+    font-size: 2.25em;
+    font-weight: 400;
+  }
+  .reviews .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 50px 0;
+  }
+  .review-content {
+    margin-top: 70px;
+    width: 48%;
+  }
+  .review-content h3 {
+    font-size: 1.875rem;
+
+  }
+  .review-content p {
+    font-size: 1.125em;
+    line-height: 24px;
+    width: 75%;
+  }
+  .footer-content h3 {
+    font-size: 1.875em;
+    font-weight: normal;
+  }
+  .footer-content p {
+    font-size: 1.125em;  
+  }
+  .social h3 {
+    font-size: 1.875em;
+    font-weight: normal;    
   }
 }
 /* ==========================================================================
